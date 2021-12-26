@@ -158,45 +158,45 @@ class Wrestling(Sport):
             print('Нельзя выходить на бой с противником другого уровня')
 
 
-Badminton_player = Badminton('Bob', 5, 20)
-print('Энергия -', Badminton_player.energy, ', скорость -', Badminton_player.speed)
-Badminton_player.get_injured()
-print('Энергия -', Badminton_player.energy)
+badminton_player = Badminton('Bob', 5, 20)
+print('Энергия -', badminton_player.energy, ', скорость -', badminton_player.speed)
+badminton_player.get_injured()
+print('Энергия -', badminton_player.energy)
 qualities_of_opponent = 60
 print(f'Соревнования с противником, у которого (энергия + скорость) = {qualities_of_opponent}:')
-Badminton_player.compete(qualities_of_opponent)
+badminton_player.compete(qualities_of_opponent)
 print()
 
-Gymnast = Gymnastic('Sam', 9, 20)
-print('Энергия -', Gymnast.energy, ', сила -', Gymnast.power)
-Gymnast.train(3)
-print('Энергия -', Gymnast.energy, ', сила -', Gymnast.power, ', уровень -', Gymnast.level)
+gymnast = Gymnastic('Sam', 9, 20)
+print('Энергия -', gymnast.energy, ', сила -', gymnast.power)
+gymnast.train(3)
+print('Энергия -', gymnast.energy, ', сила -', gymnast.power, ', уровень -', gymnast.level)
 needed_for_a_new_skill = 91
 print(f'Для освоения навыка (энергия + сила) должны быть больше {needed_for_a_new_skill}')
-Gymnast.get_a_new_skill(needed_for_a_new_skill)
+gymnast.get_a_new_skill(needed_for_a_new_skill)
 print()
 
-Basketball_player = Basketball('Tom', 1, 5)
-Basketball_player.train(2)
-print('Энергия -', Basketball_player.energy, ', работа в команде -', Basketball_player.teamwork, ', уровень -',
-      Basketball_player.level)
+basketball_player = Basketball('Tom', 1, 5)
+basketball_player.train(2)
+print('Энергия -', basketball_player.energy, ', работа в команде -', basketball_player.teamwork, ', уровень -',
+      basketball_player.level)
 qualities_of_opponent = 120
 print(f'Игра с противником, у которого такой же уровень, а (энергия + работа в команде) = {qualities_of_opponent}:')
-Basketball_player.compete(1, qualities_of_opponent)
+basketball_player.compete(1, qualities_of_opponent)
 print()
 
-Swimmer = Swimming('Liz', 11, 25, 2.6)
-print('Энергия -', Swimmer.energy, ', выносливость -', Swimmer.endurance, ', уровень -', Swimmer.level)
-print('Попытаться побить личный рекорд -', Swimmer.best_time)
-Swimmer.beat_a_personal_best(2.5)
-print('Энергия -', Swimmer.energy, ', выносливость -', Swimmer.endurance, ', уровень -', Swimmer.level)
+swimmer = Swimming('Liz', 11, 25, 2.6)
+print('Энергия -', swimmer.energy, ', выносливость -', swimmer.endurance, ', уровень -', swimmer.level)
+print('Попытаться побить личный рекорд -', swimmer.best_time)
+swimmer.beat_a_personal_best(2.5)
+print('Энергия -', swimmer.energy, ', выносливость -', swimmer.endurance, ', уровень -', swimmer.level)
 print()
 
-Wrestler = Wrestling('Ann', 4, 9)
-print('Энергия -', Wrestler.energy, ', реакция -', Wrestler.reaction, ', уровень -', Wrestler.level)
+wrestler = Wrestling('Ann', 4, 9)
+print('Энергия -', wrestler.energy, ', реакция -', wrestler.reaction, ', уровень -', wrestler.level)
 qualities_of_opponent = 80
 level_of_opponent = 4
 print(f'Бой с противником того же уровня и с (реакция + энергия) = {qualities_of_opponent}')
-Wrestler.battle(level_of_opponent, qualities_of_opponent)
-Wrestler.recovery()
+wrestler.battle(level_of_opponent, qualities_of_opponent)
+wrestler.recovery()
 print('Энергия -', Wrestler.energy, ', реакция -', Wrestler.reaction, ', уровень -', Wrestler.level)
